@@ -1,0 +1,191 @@
+/***************************/
+/* Selector de etiqueta 
+    Selector universal      -> *
+    Selector de id          -> #
+    Selector de clase       -> .
+    Selector de etiqueta    -> body
+
+/***************************/
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+
+/*font-face se usa para tipografiias personalizadas*/
+@font-face{
+    font-family: 'roboto';
+    src: url(../fonts/roboto/Roboto-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.row{
+    margin: 0;
+}
+
+.row > *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    font-family:'roboto', sans-serif;
+    justify-content: center;
+    background-color: #d9edf8;
+    min-height: 100vh;
+}
+
+#container{
+    box-shadow: 0 0 5px black;
+    font-weight: 100;
+    position: absolute;
+    width: 80%;
+}
+/* --------------header-------------- */
+#header{
+    align-items: center;
+    background: #c9c9c9;
+    border-bottom: 3px dashed rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#header img{
+    width: auto;
+    height: 5rem;
+}
+
+#header div a{
+    color: black;
+    display: block;
+    text-decoration: none;
+    text-shadow: 0 0 1px black;
+    font-size: 1.5rem;
+    font-weight:400;
+}
+
+#header div a:hover{
+    color: black;
+    display: block;
+    text-decoration: none;
+    text-shadow: 0 0 5px black;
+}
+
+/* --------------Menu-------------- */
+
+.nav{
+    padding: 0;
+    border-bottom: solid black;
+}
+
+a.nav-link{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.nav-link:hover{
+    color: white;
+    background-color: black;
+}
+
+.container-fluid > button{
+    margin: 1rem 0;
+}
+
+
+/* --------------Section-------------- */
+section#section{
+    display: flex;
+    background-color: #c9c9c921;
+    flex-wrap: wrap;
+    gap: 2rem;
+    height: 100%;
+    justify-content: space-between;
+    padding: 3rem;
+    width: 75%;
+}
+
+.card img{
+    margin: 1.5rem auto ;
+    width: 50%;
+}
+
+.card-body a{
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+
+/* --------------Aside-------------- */
+
+.aside{
+    background: white;
+
+}
+
+aside{
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    min-height: 71.5vh;
+    padding: 20% 2rem;
+    width: 100%;
+}
+
+aside > a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+label{
+    line-height: 19px;
+}
+
+aside form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+}
+/* --------------Footer-------------- */
+.vista > h1{
+    border-bottom: black solid 2px;
+    margin: 0 1.5rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+/* --------------Footer-------------- */
+.contenedor{
+    background-color: rgba(0, 0, 0, 0.253);
+    min-height: 100%;
+
+}
+
+
+
+/* --------------Footer-------------- */
+footer{
+    background-color: #c9c9c9;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    width: 100%;
+}
+
+footer > p{
+    font-weight: bolder;
+    margin: 0;
+}
