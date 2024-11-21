@@ -1,6 +1,6 @@
 <?php
 
-    define("base_url","http://localhost/tiendaivan2/");
+    define("base_url","http://localhost/proyecto-tienda/");
 
     define("controller_default","productoController");
 

@@ -41,12 +41,15 @@ class usuarioController{
         }else{
           $_SESSION['register'] = "Failed";
         }
-        
+        header("Location: registro") ;
       }else{
         $_SESSION['register'] = "Failed";
       }
-
     }
+  }
+
+  public function logout(){
+
   }
 
 }

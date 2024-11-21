@@ -80,4 +80,13 @@
             $save = $this->db->query($sql);
         }
 
+        // public function validarUsuario($password, $email){
+        //     // Consulta SQL para buscar el email
+        //     $query = "SELECT email, password FROM usuarios WHERE email = :email LIMIT 1";
+        //     // Preparar la sentencia SQL
+        //     $stmt = $this->db->prepare($query);
+        //     // Asociar los parámetros
+        //     $stmt->bindParam(':email', $email);
+        // }
+
     }

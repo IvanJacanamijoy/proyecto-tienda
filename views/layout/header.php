@@ -17,7 +17,7 @@
                     <header id="header">
                         <img src="<?=base_url?>assets/img/logo.png" alt="logo de la tienda">
                         <div>
-                            <a href="<?=base_url?>index.php">Tienda don Pepe</a>
+                            <a href="<?=base_url?>index.php">Tienda Ivan</a>
                         </div>
                     </header>
                 </div>
@@ -39,6 +39,12 @@
                                     <a class="nav-link" href="#">Categoria 4</a>
                                 </div>
                             </div>
+                            <?php
+                                if(isset($_SESSION["usuario"])){
+                                    echo '<a class="btn btn-danger" href="<?=base_url?>" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cerrar Sesión</a>';
+                                }
+                            ?>
+                            
                         </div>
                     </nav>
                 </div>

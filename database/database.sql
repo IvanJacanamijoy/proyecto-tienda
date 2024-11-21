@@ -1,5 +1,5 @@
-CREATE DATABASE tiendaivan2;
-USE tiendaivan2;
+CREATE DATABASE proyecto_tienda;
+USE proyecto_tienda;
 
 CREATE TABLE t_usuarios(
     id_usuario  int(11) auto_increment NOT NULL,
